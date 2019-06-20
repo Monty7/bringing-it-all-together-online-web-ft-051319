@@ -27,15 +27,19 @@ class Dog
   end
   
   def self.new_from_db(row)
-   
+    id = row[0]
+    name = row[1]
+    grade = row[2]
+    self.new(id, name, grade)
   end
   
   def find_by_id(id_num)
     sql = <<-SQL
       SELECT * FROM dogs WHERE id = id_num
     SQL
-    
-    
+    DB[:conn].execute(sql).map do |row|
+      
+    end
   end
   
   def save

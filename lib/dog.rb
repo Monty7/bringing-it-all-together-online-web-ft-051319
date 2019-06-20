@@ -26,7 +26,7 @@ class Dog
     new_dog
   end
   
-  def new_from_db
+  def self.new_from_db
    
   end
   

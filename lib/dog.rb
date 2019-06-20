@@ -27,7 +27,7 @@ class Dog
   end
   
   def new_from_db
-    
+   
   end
   
   def save

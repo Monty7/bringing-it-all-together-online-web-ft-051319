@@ -39,7 +39,7 @@ class Dog
     sql = <<-SQL
       SELECT * FROM dogs WHERE id = ?
     SQL
-    binding.pry
+   # binding.pry
     DB[:conn].execute(sql, id_num).map do |row|
       self.new_from_db(row)
     end.first

@@ -28,10 +28,10 @@ class Dog
   
   def self.new_from_db(row)
     binding.pry
-    id = row[0]
-    name = row[1]
-    grade = row[2]
-    self.new()
+    dog_details[:id] = row[0]
+    dog_details[:name] = row[1]
+    dog_details[:grade] = row[2]
+    self.new(dog_details)
   end
   
   def self.find_by_id(id_num)

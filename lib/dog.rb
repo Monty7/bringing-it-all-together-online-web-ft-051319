@@ -26,6 +26,10 @@ class Dog
     new_dog
   end
   
+  def new_from_db
+    
+  end
+  
   def save
     sql = <<-SQL 
       INSERT INTO dogs (name, breed) VALUES (?, ?)

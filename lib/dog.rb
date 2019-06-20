@@ -27,7 +27,7 @@ class Dog
   end
   
   def self.new_from_db(row)
-    binding.pry
+    #binding.pry
     dog_details[:id] = row[0]
     dog_details[:name] = row[1]
     dog_details[:grade] = row[2]

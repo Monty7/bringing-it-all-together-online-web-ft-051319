@@ -31,7 +31,7 @@ class Dog
     dog_details = {}
     dog_details[:id] = row[0]
     dog_details[:name] = row[1]
-    dog_details[:grade] = row[2]
+    dog_details[:breed] = row[2]
     self.new(dog_details)
   end
   

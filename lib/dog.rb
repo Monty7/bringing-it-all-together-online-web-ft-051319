@@ -30,6 +30,14 @@ class Dog
    
   end
   
+  def find_by_id(id_num)
+    sql = <<-SQL
+      SELECT * FROM dogs WHERE id = id_num
+    SQL
+    
+    
+  end
+  
   def save
     sql = <<-SQL 
       INSERT INTO dogs (name, breed) VALUES (?, ?)
